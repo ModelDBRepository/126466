@@ -2,7 +2,10 @@
 Network simulations of self-sustained activity in networks of adaptive exponential integrate and fire neurons
 =============================================================================================================
 
-Demo files implemented using both NEURON and PyNN.
+Demo files implemented using both NEURON and PyNN. The top level
+folder (the folder with this README) python files will work with PyNN
+version 0.8 and the python files in the prevPyNN subfolder will work
+with PyNN version 0.7
 
 demo_cx-lts
 -----------
