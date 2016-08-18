@@ -1,11 +1,11 @@
-=============================================================================================================
-Network simulations of self-sustained activity in networks of adaptive exponential integrate and fire neurons
-=============================================================================================================
+Network simulations of self-sustained activity in networks of
+Adaptive Exponential integrate and fire neurons
 
-Demo files implemented using both NEURON and PyNN.
+Demo files implemented using PyNN, and which can run on NEURON
+or NEST simulators.
 
-demo_cx-lts
------------
+
+demo_cx05_N=500b_LTS.py: 
 
 Simulations of self-sustained AI states in a small N=500 network of
 excitatory and inhibitory neurons, described by Adaptive
@@ -14,8 +14,7 @@ exponential approach to threshold.  The connectivity is random and
 there is a small proportion (5%) of LTS cells among the excitatory
 neurons.  This simulation reproduces Fig. 7 of the paper below.
 
-demo_cx_up-down
----------------
+demo_cx_Up-Down.py: 
 
 Simulations of Up-Down states in a two-layer cortical network, with
 one N=2000 network and a smaller N=500 network.  Both networks have
@@ -44,16 +43,10 @@ Converted to PyNN by Andrew Davison
 and Lyle Muller
     lyle.e.muller@gmail.com
 
+Usage:
 
-Usage (NEURON version):
-
-    nrnivmodl
-    nrngui <file.oc>
-
-Usage (Python version):
-
-    python <file.py> <simulator>
+    python <file> <simulator>
     
-where <file.py> is one of the demo files, and <simulator>
+where <file> is one of the demo files listed above, and <simulator>
 is one of neuron, nest, pcsim, brian, facets_hardware2, etc...
 
